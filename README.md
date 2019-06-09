@@ -73,10 +73,10 @@ The remainder of the file is binary data containing the raw, uncompressed image.
 
 We can retrieve the header of this file by doing:
 
-  $ head -n 3 Tux.ppm
-  P6
-  265 314
-  255
+    $ head -n 3 Tux.ppm
+    P6
+    265 314
+    255
 
 This means the rest of the binary data is 265x314 pixels by 255 colors.
 
@@ -87,10 +87,10 @@ To create our penguin, we want to do the following steps:
   
 I did this with the following commands;
 
-  $ head -n 3 Tux.ppm > Tux.header
-  $ tail -n +4 Tux.ppm > Tux.body
-  $ openssl enc -aes-128-ecb -nosalt -pass pass:"rob" -in Tux.body -out Tux.body.ecb
-  $ cat Tux.header Tux.body.ecb > Tux.ecb.ppm
+    head -n 3 Tux.ppm > Tux.header
+    tail -n +4 Tux.ppm > Tux.body
+    openssl enc -aes-128-ecb -nosalt -pass pass:"rob" -in Tux.body -out Tux.body.ecb
+    cat Tux.header Tux.body.ecb > Tux.ecb.ppm
   
 Then, you want to view the results. Many image viewers can decode the PPM format.
 On macOS, I used the Preview app. I also used that app to save the results in
@@ -100,7 +100,7 @@ I've checked in the PNG format into this project, for display in this page.
 For changing the mode to *cipher block chaining*, simply change the algorithm to
 *aes-128-cbc", and change the file output to *Tux.body.cbc*.
 
-  $ openssl enc -aes-128-cbc -nosalt -pass pass:"rob" -in Tux.body -out Tux.body.cbc
+    openssl enc -aes-128-cbc -nosalt -pass pass:"rob" -in Tux.body -out Tux.body.cbc
   
 ## Conclusion
 
