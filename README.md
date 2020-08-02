@@ -93,8 +93,8 @@ Because of this *ECB penguin* issue, nobody uses code book mode (AES-ECB) in
 practice.
 
 Other modes have different properties. One useful feature of AES-CBC
-("cipher block chaining" mode) is that any corruption near the start of the chain
-will cause the rest of the chain to decrypt into nonsense. Indeed, this "chaining"
+("cipher block chaining" mode) is that any corruption near the start of the plaintext
+will cause the rest of the chain encrypt into something different. Indeed, this "chaining"
 concept analogous to the "block chain" behind Bitcoin, such that the entire chain
 of transactions cannot be altered in any place without altering the entire chain.
 
