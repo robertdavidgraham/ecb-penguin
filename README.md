@@ -26,7 +26,7 @@ when using a block cipher.
 
 The most famous cartoon for demonstrating this, from where this problem gets
 its name, is the Linux penguin mascot known as "Tux" (drawn by Larry Ewing lewing@isc.tamu.edu and The GIMP 
-software) [rights](https://commons.wikimedia.org/wiki/File:Tux.png)
+software) ([rights](https://commons.wikimedia.org/wiki/File:Tux.png)):
 
 ![Tux](/Tux.png)
 
@@ -36,6 +36,7 @@ or completely black (0x000000).
 In the image below, we've encrypted it.
 
 ![Tux-ecb](/Tux.ecb.png)
+
 (I created this image and put it in the public domain, so you can use it any way
 you like).
 
@@ -68,6 +69,7 @@ In the following example, we encrypt our image with AES, but this time, using
 nonense. We have no clue here what the original contents might have been.
 
 ![Tux-cbc](/Tux.cbc.png)
+
 (I created this image and put it in the public domain, so you can use it any way
 you like).
 
