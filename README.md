@@ -89,7 +89,7 @@ AES acts as a sort of code book -- each block of plaintext is replaced by
 the specified ciphertext. You could in theory create an improbably large book
 consisting of every possible output block given an input block.
 
-Because of this *ECB penguin* issue, nobody uses code book mode (AES-ECB) in 
+Because of this *ECB penguin* issue, nobody [competent](https://www.theregister.com/2022/10/14/microsoft_office_365_message_encryption/?utm_source=twitter&utm_medium=twitter&utm_campaign=auto&utm_content=article) uses code book mode (AES-ECB) in 
 practice.
 
 Other modes have different properties. One useful feature of AES-CBC
